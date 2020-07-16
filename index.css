@@ -57,7 +57,7 @@
 
 .fade {
     animation: fade;
-    animation-duration: 1.4s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -66,6 +66,6 @@
         opacity: 1;
     }
     100% {
-        opacity: 0.2;
+        opacity: 0.1;
     }
 }

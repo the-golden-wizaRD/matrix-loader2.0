@@ -38,8 +38,8 @@ window.addEventListener("load", () => {
     matrix();
     setTimeout(() => {
         loader.classList.add("fade");
-    }, 4000)
+    }, 4500)
     setTimeout(() => {
         loader.remove();
-    }, 5500)
+    }, 5000)
 });
