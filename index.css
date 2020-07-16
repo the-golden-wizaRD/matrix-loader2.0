@@ -1,0 +1,71 @@
+@font-face {
+    src: url(./matrix-original.otf);
+    font-family: matrix;
+}
+
+#loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #111;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.thread {
+    width: 1px;
+    word-wrap:break-word;
+    word-break:break-all;
+    height: auto;
+    position:absolute;
+    top: -12200px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #1ec503;
+    animation-name: matrix;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-family: matrix;
+}
+.thread:nth-child(2n) {
+    animation-duration: 15s;
+    animation-delay: 0.2s;
+}
+.thread:nth-child(3n) {
+    animation-duration: 14s;
+    animation-delay: 0.3s;
+}
+.thread:nth-child(5n) {
+    animation-duration: 11s;
+    animation-delay: 0.4s;
+}
+.thread:nth-child(7n) {
+    animation-duration: 12s;
+    animation-delay: 0.5s;
+}
+@keyframes matrix {
+    0% {
+        top: -12200px;
+    }
+    100% {
+        top: 1200px;
+    }
+}
+
+.fade {
+    animation: fade;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
